@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     if(Status == 1 || chatref){
-      chatref.current?.scrollIntoView({ behavior: "smooth" });
+      chatref.current?.scrollIntoView({ behavior: "smooth",  block: 'end' });
     }
   }, [Chats]);
 
