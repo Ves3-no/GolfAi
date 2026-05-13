@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "Backend.Controllers.FetchAIController",
+    "Method": "Post",
+    "RelativePath": "airesponse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Iron",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Chat",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

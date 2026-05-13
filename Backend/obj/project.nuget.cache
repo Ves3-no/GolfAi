@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "0LDv/2Xx9X4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\heine\\OneDrive\\Desktop\\Koding\\React\\golf ai\\Backend\\Backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\heine\\.nuget\\packages\\google.apis\\1.69.0\\google.apis.1.69.0.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\google.apis.auth\\1.69.0\\google.apis.auth.1.69.0.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\google.apis.core\\1.69.0\\google.apis.core.1.69.0.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\google.genai\\1.6.1\\google.genai.1.6.1.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.7\\microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\10.4.0\\microsoft.extensions.ai.abstractions.10.4.0.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\mimetypes\\2.5.2\\mimetypes.2.5.2.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\heine\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

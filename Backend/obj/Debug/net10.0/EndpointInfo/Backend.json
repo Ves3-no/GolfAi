@@ -1,0 +1,71 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "Backend | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7266"
+    },
+    {
+      "url": "http://localhost:5106"
+    }
+  ],
+  "paths": {
+    "/airesponse": {
+      "post": {
+        "tags": [
+          "FetchAI"
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Iron": {
+                    "type": "string"
+                  },
+                  "Chat": {
+                    "type": "string"
+                  },
+                  "Status": {
+                    "pattern": "^-?(?:0|[1-9]\\d*)$",
+                    "type": [
+                      "integer",
+                      "string"
+                    ],
+                    "format": "int32"
+                  },
+                  "Image": {
+                    "$ref": "#/components/schemas/IFormFile"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "IFormFile": {
+        "type": "string",
+        "format": "binary"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "FetchAI"
+    }
+  ]
+}
