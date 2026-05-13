@@ -66,7 +66,7 @@ export async function FirstPost(Iron, Status, setStatus, Image, setChats, Chats,
   console.log("skal sende")
   setLoading(true)
   const AiMessage = await fetch(
-    "https://localhost:7266/airesponse", 
+    "https://golfapi.ves3.no/airesponse", 
     {
       method: 'POST',
       body: data
@@ -95,7 +95,7 @@ export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChat
     data.append("UserID", UserID)
     setChatMessage("")
     const AiMessage = await fetch(
-      "https://localhost:7266/airesponse", 
+      "https://golfapi.ves3.no/airesponse", 
       {
         method: 'POST',
         body: data
