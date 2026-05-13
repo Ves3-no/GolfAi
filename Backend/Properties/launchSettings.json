@@ -12,7 +12,6 @@
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "GOOGLE_API_KEY": "AIzaSyAiQmSWJ-cjGYx0K8xlg_zNJTT-nvgB-fk"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7266;http://localhost:5106"
