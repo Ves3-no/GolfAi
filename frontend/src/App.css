@@ -4,6 +4,113 @@
         transform: rotate(360deg);
     }
 }
+@keyframes text{
+
+    /* Samler baller */
+    0%{content:"";}
+    1%{content:"S";}
+    2%{content:"Sa";}
+    3%{content:"Sam";}
+    4%{content:"Saml";}
+    5%{content:"Samle";}
+    6%{content:"Samler";}
+    7%{content:"Samler ";}
+    8%{content:"Samler b";}
+    9%{content:"Samler ba";}
+    10%{content:"Samler bal";}
+    11%{content:"Samler ball";}
+    12%{content:"Samler balle";}
+    13%{content:"Samler baller";}
+
+    /* pause */
+    20%{content:"Samler baller";}
+
+    /* delete */
+    21%{content:"Samler balle";}
+    22%{content:"Samler ball";}
+    23%{content:"Samler bal";}
+    24%{content:"Samler ba";}
+    25%{content:"Samler b";}
+    26%{content:"Samler ";}
+    27%{content:"Samler";}
+    28%{content:"Samle";}
+    29%{content:"Saml";}
+    30%{content:"Sam";}
+    31%{content:"Sa";}
+    32%{content:"S";}
+    33%{content:"";}
+
+    /* Ser mot himmelen */
+    34%{content:"S";}
+    35%{content:"Se";}
+    36%{content:"Ser";}
+    37%{content:"Ser ";}
+    38%{content:"Ser m";}
+    39%{content:"Ser mo";}
+    40%{content:"Ser mot";}
+    41%{content:"Ser mot ";}
+    42%{content:"Ser mot h";}
+    43%{content:"Ser mot hi";}
+    44%{content:"Ser mot him";}
+    45%{content:"Ser mot himm";}
+    46%{content:"Ser mot himme";}
+    47%{content:"Ser mot himmel";}
+    48%{content:"Ser mot himmele";}
+    49%{content:"Ser mot himmelen";}
+
+    /* pause */
+    56%{content:"Ser mot himmelen";}
+
+    /* delete */
+    57%{content:"Ser mot himmele";}
+    58%{content:"Ser mot himmel";}
+    59%{content:"Ser mot himme";}
+    60%{content:"Ser mot himm";}
+    61%{content:"Ser mot him";}
+    62%{content:"Ser mot hi";}
+    63%{content:"Ser mot h";}
+    64%{content:"Ser mot ";}
+    65%{content:"Ser mot";}
+    66%{content:"Ser mo";}
+    67%{content:"Ser m";}
+    68%{content:"Ser ";}
+    69%{content:"Ser";}
+    70%{content:"Se";}
+    71%{content:"S";}
+    72%{content:"";}
+
+    /* Leser litt til */
+    73%{content:"L";}
+    74%{content:"Le";}
+    75%{content:"Les";}
+    76%{content:"Lese";}
+    77%{content:"Leser";}
+    78%{content:"Leser ";}
+    79%{content:"Leser l";}
+    80%{content:"Leser li";}
+    81%{content:"Leser lit";}
+    82%{content:"Leser litt";}
+    83%{content:"Leser litt ";}
+    84%{content:"Leser litt t";}
+    85%{content:"Leser litt ti";}
+    86%{content:"Leser litt til";}
+
+    /* pause */
+    93%{content:"Leser litt til";}
+
+    /* delete */
+    94%{content:"Leser litt ti";}
+    95%{content:"Leser litt t";}
+    96%{content:"Leser litt ";}
+    97%{content:"Leser litt";}
+    98%{content:"Leser lit";}
+    99%{content:"Leser li";}
+    100%{content:"";}
+}
 #spinner{
-    animation: spin 5s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loadingtekst::before{
+    animation: text 15s linear infinite;
+    content: "";
 }

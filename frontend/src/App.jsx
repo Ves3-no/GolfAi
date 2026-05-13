@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 import MainPage from './sites/Main'
 import FirstPage from './sites/FirstPost'
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import spinner from './assets/3095076-200.png'
+import spinner from './assets/Loading-PNG-Images.png'
 function App() {
   const navigate = useNavigate()
   const [Iron, setIron] = useState("1-iron")
@@ -43,8 +43,9 @@ function App() {
     <>
     <div className='flex justify-center items-center md:p-4 h-[100vh] bg-[#B7D8B9]'>
     <div className='w-full h-[100%] bg-[#41633e] flex items-center justify-center overflow-hidden font-[cause] max-w-[650px] md:rounded-3xl md:overflow-hidden md:shadow-2xl'>
-       <div className={`${loading ? "flex" : "hidden"} absolute w-full h-full bg-[#41633e] z-50 text-white items-center justify-center`}>
+       <div className={`${loading ? "flex" : "hidden"} absolute w-full h-full bg-[#41633e] z-50 text-white items-center justify-center flex-col`}>
         <img src={spinner} id="spinner" className='w-[100px] aspect-[1/1]'/>
+        <p className='text-white' id='loadingtekst'></p>
       </div>
        <Routes>
         <Route path="/" element={<FirstPage Iron={Iron} Status={Status} setStatus={setStatus} Image={Image} setChats={setChats} Chats={Chats} UserID={UserID} setImage={setImage} setIron={setIron} setLoading={setLoading}/>} />
