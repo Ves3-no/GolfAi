@@ -50,6 +50,7 @@ function App() {
        <Routes>
         <Route path="/" element={<FirstPage Iron={Iron} Status={Status} setStatus={setStatus} Image={Image} setChats={setChats} Chats={Chats} UserID={UserID} setImage={setImage} setIron={setIron} setLoading={setLoading}/>} />
         <Route path="/home" element={<MainPage Status={Status} setChats={setChats} Chats={Chats} ChatMessage={ChatMessage} UserID={UserID} setChatMessage={setChatMessage} Iron={Iron} Image={Image} chatref={chatref}/>} />
+        <Route path="*" element={<FirstPage Iron={Iron} Status={Status} setStatus={setStatus} Image={Image} setChats={setChats} Chats={Chats} UserID={UserID} setImage={setImage} setIron={setIron} setLoading={setLoading}/>} />
        </Routes>
        <span id='Made-by' className='fixed bottom-[10px] left-0 right-0 w-full text-center text-white md:bottom-[25px]'>Made by <a href="http://ves3.no" className='hover:text-green-700'>Ves3</a></span>
       </div>
