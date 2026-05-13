@@ -43,7 +43,7 @@ function App() {
     <>
     <div className='flex justify-center items-center md:p-4 h-[100vh] bg-[#B7D8B9]'>
     <div className='w-full h-[100%] bg-[#41633e] flex items-center justify-center overflow-hidden font-[cause] max-w-[650px] md:rounded-3xl md:overflow-hidden md:shadow-2xl'>
-       <div className={`${loading ? "flex" : "hidden"} absolute w-full h-full bg-[#41633e] z-50 text-white items-center justify-center flex-col`}>
+       <div className={`${loading ? "flex" : "hidden"} absolute w-full h-full bg-[#41633e] z-50 text-white items-center justify-center flex-col gap-3`}>
         <img src={spinner} id="spinner" className='w-[100px] aspect-[1/1]'/>
         <p className='text-white' id='loadingtekst'></p>
       </div>
