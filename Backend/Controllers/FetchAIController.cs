@@ -10,7 +10,7 @@ namespace Backend.Controllers
     [Route("airesponse")]
     public class FetchAIController : ControllerBase
     {
-        static List<Image> Images = new< Image > ();
+        static List<Image> Images = new List<Image> ();
         static List<Message> MessageHistory = new List<Message>();
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] HeaderContent Contents)
