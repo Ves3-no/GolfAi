@@ -86,10 +86,11 @@ export async function FirstPost(Iron, Status, setStatus, Image, setChats, Chats,
   }
   setLoading(false)
 }
-export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChatMessage){
+export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChatMessage, Image){
     var chat = {Writer: "User", messageText: ChatMessage}
     console.log(chat)
     console.log(Chats)
+    console.log(Image)
     setChats([...Chats, chat])
     const data = new FormData()
     data.append("Chat", ChatMessage)
