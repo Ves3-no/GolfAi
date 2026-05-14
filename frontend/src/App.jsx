@@ -86,7 +86,7 @@ export async function FirstPost(Iron, Status, setStatus, Image, setChats, Chats,
   }
   setLoading(false)
 }
-export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChatMessage, Image){
+export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChatMessage){
     var chat = {Writer: "User", messageText: ChatMessage}
     console.log(chat)
     console.log(Chats)
@@ -95,7 +95,6 @@ export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChat
     data.append("Chat", ChatMessage)
     data.append("Status", String(Status))
     data.append("UserID", UserID)
-    data.append("Image", Image)
     setChatMessage("")
     const AiMessage = await fetch(
       "https://golfapi.ves3.no/airesponse", 
