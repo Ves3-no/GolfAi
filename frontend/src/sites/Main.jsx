@@ -4,15 +4,15 @@ function MainPage({Status, setChats, Chats, ChatMessage, UserID, setChatMessage,
     return(
         <>
         <div className='flex flex-col h-[90vh] w-[100%] justify-center items-center' >
-            <div ref={chatref} id='ChatBox' className='w-[95%] flex-8 overflow-y-scroll flex flex-col gap-6 overflow-x-hidden p-2 border-[2px] border-[#B7D8B9] rounded-2xl' >
+            <div id='ChatBox' className='w-[95%] flex-8 overflow-y-scroll flex flex-col gap-6 overflow-x-hidden p-2 border-[2px] border-[#B7D8B9] rounded-2xl' >
                 {Chats.map((Chat, index) => (
                     Chat.writer === "You" ? (
-                        <div key={index} className='text-base bg-[#B7D8B9] p-4 rounded-2xl self-start max-w-[90%]'>
+                        <div key={index} ref={chatref} className='text-base bg-[#B7D8B9] p-4 rounded-2xl self-start max-w-[90%]'>
                             <p className='font-bold text-lg border-b text-[#41633e]'>Trener</p>
                             <Markdown>{Chat.messageText}</Markdown>
                         </div>
                     ) : (
-                        <div key={index} className='text-base bg-[#7b9c7d] text-[#B7D8B9] p-4 rounded-2xl self-end max-w-[80%] self-right'>
+                        <div key={index} ref={chatref} className='text-base bg-[#7b9c7d] text-[#B7D8B9] p-4 rounded-2xl self-end max-w-[80%] self-right'>
                             <p className='font-bold text-lg border-b text-[#41633e]'>Du</p>
                             <Markdown>{Chat.messageText}</Markdown>
                         </div>
