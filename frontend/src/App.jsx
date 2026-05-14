@@ -90,12 +90,12 @@ export async function Post(Status, setChats, Chats, ChatMessage, UserID, setChat
     var chat = {Writer: "User", messageText: ChatMessage}
     console.log(chat)
     console.log(Chats)
-    console.log(Image)
     setChats([...Chats, chat])
     const data = new FormData()
     data.append("Chat", ChatMessage)
     data.append("Status", String(Status))
     data.append("UserID", UserID)
+    data.append("Image", Image)
     setChatMessage("")
     const AiMessage = await fetch(
       "https://golfapi.ves3.no/airesponse", 
