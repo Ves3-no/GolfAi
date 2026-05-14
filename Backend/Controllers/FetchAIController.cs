@@ -12,8 +12,7 @@ namespace Backend.Controllers
     public class FetchAIController(IMemoryCache cache) : ControllerBase
     {
         IMemoryCache _cache = cache;
-         [HttpPost]
-        
+        [HttpPost]
         public async Task<IActionResult> Post([FromForm] HeaderContent Contents)
         {
 
